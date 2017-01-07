@@ -25,4 +25,5 @@ int main(void){
 	for (i=0; i<n; i++){
         	printf( "%.2f\n", Array[i]);  
 	} 
+	return 0;
 }
