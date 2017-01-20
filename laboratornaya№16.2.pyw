@@ -7,7 +7,8 @@ while 1:
         print("Элементы массива:")
         print(array)
         break
-    except ValueError:
+    except ValueError: #ValueError - функция получает аргумент правильного типа, но некорректного значения.
+                       #Для обработки исключений используется конструкция try - except.
         print("Вы ошиблись. Попробуйте снова.")
 
 #Сортировка элементов массива
@@ -19,12 +20,12 @@ print(array)
 array2 = []
 for i in array:
     if i not in array2:
-        array2.append(i)
+        array2.append(i)  #array.append(х) - добавление элемента в конец массива.
 print("Эллементы скопированного массива без повторяющихся элементов:")
 print(array2)
 
 #Вывод 3-его минимума и 4-ого максимума массива
 min3 = array2[2]
-max4 = array2[len(array2)-4]
+max4 = array2[len(array2)-4]  #len(x)-выводит размер массива
 print("Третий мининум массива: ", min3)
 print("Четвертый максимум массива: ", max4)
